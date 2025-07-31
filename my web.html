@@ -1,27 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML Document Structure</title>
-    <meta name="description" content="Learning HTML document structure">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Document Structure</title>
+  <meta name="description" content="Learning HTML document structure">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f9fafb;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2563eb;
+      color: white;
+      padding: 20px 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #1d4ed8;
+    }
+
+    main {
+      padding: 40px;
+      background-color: #ffffff;
+      max-width: 1000px;
+      margin: 30px auto;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    main h2 {
+      font-size: 1.75rem;
+      margin-bottom: 15px;
+      color: #111827;
+    }
+
+    footer {
+      background-color: #111827;
+      color: #f9fafb;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Page Header</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h2>Main Content</h2>
-        <p>This is the main content area of the page.</p>
-    </main>
-    <footer>
-        <p>© 2024 My Website. All rights reserved.</p>
-    </footer>
+  <header>
+    <h1>Page Header</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Main Content</h2>
+    <p>This is the main content area of the page.</p>
+  </main>
+
+  <footer>
+    <p>© 2024 My Website. All rights reserved.</p>
+  </footer>
 </body>
 </html>
